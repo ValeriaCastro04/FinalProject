@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guía de Supervivencia ESEN</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bowlby+One+SC&family=Chewy&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,48 +23,79 @@
         });
     </script>
 
-  <main>
+  <main class="container">
+
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <img src="images/Graduacion1.jpg" class="slide active" alt="Ceremonia de Graduación">
+            <img src="images/Firstyear.jpeg" class="slide" alt="Estudiantes">
+            <img src="images/ESEN.jpg" class="slide" alt="Campus ESEN">
+
+             <!-- Flechas -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+    </section>
+
 
     <section id="inicio">
       <h2>Bienvenido a tu primer año 🤯</h2>
       <p>Todo lo que necesitas para sobrevivir, disfrutar y no perderte en tu nueva vida universitaria.</p>
+
+        <div id="tip-del-dia" class="tip-box">
+            <h3>🎓 Tip del día</h3>
+            <p id="tip-texto">Cargando tip...</p>
+        </div>
     </section>
 
-    <section id="esenciales">
-      <h2>📚 Lo Esencial</h2>
-      <ul>
-        <li>Calendario académico</li>
-        <li>Horarios y ubicación de facultades</li>
-        <li>Cómo usar la plataforma virtual</li>
-        <li>Correo institucional y carnet</li>
-      </ul>
-    </section>
+    <div class="card">
+        <section id="esenciales">
+            <h2>📚 Lo Esencial</h2>
+            <ul>
+            <li>Calendario académico</li>
+            <li>Horarios y ubicación de facultades</li>
+            <li>Cómo usar la plataforma virtual</li>
+            <li>Correo institucional y carnet</li>
+            </ul>
+        </section>
+    </div>
 
+    <div class="card">
+        <section id="supervivencia">
+        <h2>🛡️ Modo Supervivencia</h2>
+        <p>Tips reales para aprobar materias, no rendirte, y aprender a estudiar de verdad.</p>
+        </section>    
+    </div>
+
+    <div class="card">
     <section id="servicios">
       <h2>🕵️ Servicios Secretos que Deberías Usar</h2>
       <p>Biblioteca, tutorías, apoyo psicológico, comedores, transporte y más. Gratis o casi.</p>
     </section>
+    </div>
 
-    <section id="supervivencia">
-      <h2>🛡️ Modo Supervivencia</h2>
-      <p>Tips reales para aprobar materias, no rendirte, y aprender a estudiar de verdad.</p>
-    </section>
-
+    <div class="card">
     <section id="vida-uni">
       <h2>🎉 Vida Universitaria</h2>
       <p>Eventos, grupos estudiantiles, actividades extracurriculares y cómo hacer amigos (en serio).</p>
     </section>
+    </div>
 
+    <div class="card">
     <section id="faq">
       <h2>❓ Preguntas que Todos Tuvimos</h2>
       <p>Respuestas claras a tus dudas frecuentes. Sin burocracia ni drama.</p>
     </section>
+    </div>
 
+    <div class="card">
     <section id="historias">
       <h2>📖 Historias Reales de Estudiantes</h2>
       <p>Consejos reales de quienes sobrevivieron primero. Spoiler: tú también puedes.</p>
     </section>
+    </div>
 
+    <div class="card">
     <section id="contacto">
       <h2>📬 Contacto y Enlaces Útiles</h2>
       <ul>
@@ -69,13 +104,12 @@
         <li><a href="#">Redes oficiales</a></li>
       </ul>
     </section>
+    </div>
 
   </main>
-
-  <footer>
-    <p>© 2025 Guía de Supervivencia Universitaria | Hecho con 💻 y café</p>
-  </footer>
-
+  
+  <div id="footer-placeholder"></div>
   <script src="js/script.js"></script>
+
 </body>
 </html>
