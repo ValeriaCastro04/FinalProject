@@ -4,13 +4,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guía de Supervivencia Uni</title>
+  <title>Guía de Supervivencia ESEN</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <h1>Bienvenido a la Guía de Supervivencia Universitaria</h1>
-  <p>Tu ayuda para no perderte en primer año 😉</p>
 
-  <script src="script.js"></script>
+  <div id="header-placeholder"></div>
+
+    <script>
+    fetch("components/header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+  <main>
+
+    <section id="inicio">
+      <h2>Bienvenido a tu primer año 🤯</h2>
+      <p>Todo lo que necesitas para sobrevivir, disfrutar y no perderte en tu nueva vida universitaria.</p>
+    </section>
+
+    <section id="esenciales">
+      <h2>📚 Lo Esencial</h2>
+      <ul>
+        <li>Calendario académico</li>
+        <li>Horarios y ubicación de facultades</li>
+        <li>Cómo usar la plataforma virtual</li>
+        <li>Correo institucional y carnet</li>
+      </ul>
+    </section>
+
+    <section id="servicios">
+      <h2>🕵️ Servicios Secretos que Deberías Usar</h2>
+      <p>Biblioteca, tutorías, apoyo psicológico, comedores, transporte y más. Gratis o casi.</p>
+    </section>
+
+    <section id="supervivencia">
+      <h2>🛡️ Modo Supervivencia</h2>
+      <p>Tips reales para aprobar materias, no rendirte, y aprender a estudiar de verdad.</p>
+    </section>
+
+    <section id="vida-uni">
+      <h2>🎉 Vida Universitaria</h2>
+      <p>Eventos, grupos estudiantiles, actividades extracurriculares y cómo hacer amigos (en serio).</p>
+    </section>
+
+    <section id="faq">
+      <h2>❓ Preguntas que Todos Tuvimos</h2>
+      <p>Respuestas claras a tus dudas frecuentes. Sin burocracia ni drama.</p>
+    </section>
+
+    <section id="historias">
+      <h2>📖 Historias Reales de Estudiantes</h2>
+      <p>Consejos reales de quienes sobrevivieron primero. Spoiler: tú también puedes.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>📬 Contacto y Enlaces Útiles</h2>
+      <ul>
+        <li><a href="#">Secretaría académica</a></li>
+        <li><a href="#">Ayuda técnica</a></li>
+        <li><a href="#">Redes oficiales</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Guía de Supervivencia Universitaria | Hecho con 💻 y café</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
