@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Essentials</title>
+</head>
+<body>
+     <div id="header-placeholder"></div>
+
+    <script>
+    fetch("components/header.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <div class="card">
+        <section id="esenciales">
+            <h2>📚 Lo Esencial</h2>
+            <ul>
+            <li>Calendario académico</li>
+            <li>Horarios y ubicación de facultades</li>
+            <li>Cómo usar la plataforma virtual</li>
+            <li>Correo institucional y carnet</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="card">
+        <h2>Calendario Académico</h2>
+        <p>Consulta el calendario académico para conocer las fechas importantes del semestre, como inicio de clases, exámenes y vacaciones.</p>
+        <a href="https://www.esen.edu.sv/wp-content/uploads/documentos/calendario_academico_primer_anio.pdf" target="_blank">Ver Calendario</a>
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
