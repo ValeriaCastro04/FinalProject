@@ -246,6 +246,27 @@ section {
   background-color: #178db8;
 }
 
+.card-link {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  transform: none;
+  color: #174d80;
+}
+
+/* ESSENTIALS PAGE */
 #essentials ul li a {
   color: #156fc4;
   text-decoration: none;

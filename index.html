@@ -1,111 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Survival Guide for ESEN</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/fonts.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Code: ESEN</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/fonts.css" />
 </head>
 <body>
 
   <div id="header-placeholder"></div>
 
-    <script>
+  <script>
     fetch("components/header.html")
-        .then(response => response.text())
-        .then(data => {
+      .then(response => response.text())
+      .then(data => {
         document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script>
+      });
+  </script>
 
   <main class="container">
 
+    <!-- SLIDESHOW -->
     <section class="slideshow">
-        <div class="slideshow-container">
-            <img src="images/Graduacion1.jpg" class="slide active" alt="Ceremonia de Graduación">
-            <img src="images/Firstyear.jpeg" class="slide" alt="Estudiantes">
-            <img src="images/ESEN.jpg" class="slide" alt="Campus ESEN">
-
-             <!-- Flechas -->
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
-        </div>
+      <div class="slideshow-container">
+        <img src="images/Graduacion1.jpg" class="slide active" alt="Graduation Ceremony">
+        <img src="images/Firstyear.jpeg" class="slide" alt="Students at ESEN">
+        <img src="images/ESEN.jpg" class="slide" alt="ESEN Campus">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
     </section>
 
-
+    <!-- WELCOME -->
     <section id="inicio">
-      <h2>Bienvenido a tu primer año 🤯</h2>
-      <p>Todo lo que necesitas para sobrevivir, disfrutar y no perderte en tu nueva vida universitaria.</p>
+      <h2>Welcome to Your First Year 🤯</h2>
+      <p>Everything you need to survive, enjoy, and find your way in this new university life.</p>
 
-        <div id="tip-del-dia" class="tip-box">
-            <h3>🎓 Tip del día</h3>
-            <p id="tip-texto">Cargando tip...</p>
-        </div>
+      <div id="tip-del-dia" class="tip-box">
+        <h3>🎓 Tip of the Day</h3>
+        <p id="tip-texto">Loading tip...</p>
+      </div>
     </section>
 
-    <div class="card">
-        <section id="esenciales">
-            <h2>📚 Lo Esencial</h2>
-            <ul>
-            <li>Calendario académico</li>
-            <li>Horarios y ubicación de facultades</li>
-            <li>Cómo usar la plataforma virtual</li>
-            <li>Correo institucional y carnet</li>
-            </ul>
+      <div class="card card-link" onclick="location.href='pages/essentials.html'">
+        <section id="essentials">
+          <h2><a href="pages/essentials.html">📚 University Essentials</a></h2>
+          <ul>
+            <li>Academic calendar</li>
+            <li>Class schedules & building locations</li>
+            <li>How to use the virtual platforms</li>
+            <li>Institutional email & student ID</li>
+          </ul>
         </section>
-    </div>
+      </div>
 
-    <div class="card">
-        <section id="supervivencia">
-        <h2>🛡️ Modo Supervivencia</h2>
-        <p>Tips reales para aprobar materias, no rendirte, y aprender a estudiar de verdad.</p>
-        </section>    
-    </div>
+      <div class="card card-link" onclick="location.href='pages/secretServices.html'">
+        <section id="services">
+          <h2><a href="pages/secretServices.html">🕵️ Secret Services You Should Be Using</a></h2>
+          <p>Library access, tutoring, counseling, cafeteria, transportation & more. Most of it is free (or almost).</p>
+        </section>
+      </div>
 
-    <div class="card">
-    <section id="servicios">
-      <h2>🕵️ Servicios Secretos que Deberías Usar</h2>
-      <p>Biblioteca, tutorías, apoyo psicológico, comedores, transporte y más. Gratis o casi.</p>
-    </section>
-    </div>
+      <div class="card card-link" onclick="location.href='pages/survivalTips.html'">
+        <section id="survival">
+          <h2><a href="pages/survivalTips.html">🛡️ Survival Mode</a></h2>
+          <p>Real tips to pass your courses, stay sane, and actually learn how to study.</p>
+        </section>
+      </div>
 
-    <div class="card">
-    <section id="vida-uni">
-      <h2>🎉 Vida Universitaria</h2>
-      <p>Eventos, grupos estudiantiles, actividades extracurriculares y cómo hacer amigos (en serio).</p>
-    </section>
-    </div>
+      <div class="card card-link" onclick="location.href='pages/campusLife.html'">
+        <section id="campus">
+          <h2><a href="pages/campusLife.html">🎉 Campus Life</a></h2>
+          <p>Events, student clubs, extracurriculars, and how to make friends (yes, really).</p>
+        </section>
+      </div>
 
-    <div class="card">
-    <section id="faq">
-      <h2>❓ Preguntas que Todos Tuvimos</h2>
-      <p>Respuestas claras a tus dudas frecuentes. Sin burocracia ni drama.</p>
-    </section>
-    </div>
+      <div class="card card-link" onclick="location.href='pages/faq.html'">
+        <section id="faqs">
+          <h2><a href="pages/faq.html">❓ Questions We All Had</a></h2>
+          <p>Clear answers to those things you're too shy to ask. No red tape. No drama.</p>
+        </section>
+      </div>
 
-    <div class="card">
-    <section id="historias">
-      <h2>📖 Historias Reales de Estudiantes</h2>
-      <p>Consejos reales de quienes sobrevivieron primero. Spoiler: tú también puedes.</p>
-    </section>
-    </div>
+      <div class="card card-link" onclick="location.href='pages/studentStories.html'">
+        <section id="stories">
+          <h2><a href="pages/studentStories.html">📖 Real Student Stories</a></h2>
+          <p>Advice from those who made it through. Spoiler: you can too.</p>
+        </section>
+      </div>
 
-    <div class="card">
-    <section id="contacto">
-      <h2>📬 Contacto y Enlaces Útiles</h2>
-      <ul>
-        <li><a href="#" class="btn-link">Secretaría académica</a></li>
-        <li><a href="#" class="btn-link">Ayuda técnica</a></li>
-        <li><a href="#" class="btn-link">Redes oficiales</a></li>
-      </ul>
-    </section>
-    </div>
+      <div class="card card-link" onclick="location.href='pages/contacts.html'">
+        <section id="contacts">
+          <h2><a href="pages/contacts.html">📬 Contacts & Helpful Links</a></h2>
+          <ul>
+            <li><a href="mailto:secretaria@esen.edu.sv" class="btn-link">📧 Academic Office</a></li>
+            <li><a href="mailto:soporte@esen.edu.sv" class="btn-link">🛠️ Tech Support</a></li>
+            <li><a href="https://www.instagram.com/esen_oficial/" class="btn-link" target="_blank">📱 ESEN Social Media</a></li>
+          </ul>
+        </section>
+      </div>
+
 
   </main>
-  
-  <div id="footer-placeholder"></div>
-  <script src="js/script.js"></script>
 
+  <div id="footer-placeholder"></div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

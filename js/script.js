@@ -31,14 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Tip del día aleatorio
   const tips = [
-    "Haz amigos en tu carrera, te van a salvar en todos los sentidos, en parciales, tareas, la vida.",
-    "No te duermas en las primeras clases... ahí dan las claves del ciclo.",
-    "Ten un calendario visible, el tiempo vuela en la U.",
-    "Pregunta aunque creas que es obvio. Más vale una duda tonta que un error grande.",
-    "Aprovecha los servicios gratis: tutorías, biblioteca, consejería.",
-    "Nunca subestimes el poder del café y una buena playlist para estudiar.",
-    "Guarda todo en la nube. Siempre. Por si acaso.",
+    "Make friends in your major — they'll literally save your life (exams, homework, and sanity).",
+    "Don’t fall asleep in the first classes... that’s when professors drop key info for the semester.",
+    "Keep a visible calendar — time in college moves faster than you think.",
+    "Ask questions, even the 'dumb' ones. Better a small doubt than a big mistake.",
+    "Take advantage of free resources: tutoring, library, counseling... they exist for a reason.",
+    "Never underestimate the power of coffee and a good study playlist.",
+    "Back up everything to the cloud. Always. Just in case.",
+    "Start assignments earlier than you think you need to — future you will thank you.",
+    "If you’re lost, ask a second- or third-year student. They’ve probably survived what you’re facing.",
+    "Don’t just study — explore clubs, events, and fun stuff too. Balance is key!"
   ];
+
 
   const tipTexto = document.getElementById("tip-texto");
   if (tipTexto) {
