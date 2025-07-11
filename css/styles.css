@@ -225,6 +225,10 @@ section {
   margin-bottom: 8px;
 }
 
+.card #phones li {
+  list-style-type: none;
+}
+
 /*CARDS LINKS*/
 .btn-link {
   display: inline-block;
