@@ -246,6 +246,39 @@ section {
   background-color: #178db8;
 }
 
+#essentials ul li a {
+  color: #156fc4;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#essentials ul li a::before {
+  content: "🔗";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#essentials ul li a:hover {
+  color: #0a4a91;
+  transform: translateX(3px);
+}
+
+#essentials ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#essentials li {
+  margin-bottom: 10px;
+}
 
 /* FOOTER */
 footer {
