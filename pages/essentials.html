@@ -1,42 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Essentials</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/fonts.css">
+  <title>Essentials</title>
 </head>
 <body>
-     <div id="header-placeholder"></div>
 
-    <script>
-    fetch("components/header.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("header-placeholder").innerHTML = data;
-        });
-    </script>
+  <div id="header-placeholder"></div>
 
+  <main class="container">
     <div class="card">
-        <section id="esenciales">
-            <h2>📚 Lo Esencial</h2>
-            <ul>
-            <li>Calendario académico</li>
-            <li>Horarios y ubicación de facultades</li>
-            <li>Cómo usar la plataforma virtual</li>
-            <li>Correo institucional y carnet</li>
-            </ul>
-        </section>
+      <section id="essentials">
+        <h2>📚 University Basics</h2>
+        <ul>
+          <li>Academic calendar</li>
+          <li>Class schedules and locations</li>
+          <li>How to use the virtual platforms</li>
+          <li>Study Rooms</li>
+        </ul>
+      </section>
     </div>
 
     <div class="card">
-        <h2>Calendario Académico</h2>
-        <p>Consulta el calendario académico para conocer las fechas importantes del semestre, como inicio de clases, exámenes y vacaciones.</p>
-        <a href="https://www.esen.edu.sv/wp-content/uploads/documentos/calendario_academico_primer_anio.pdf" target="_blank">Ver Calendario</a>
+      <h2>📅 Academic Calendar</h2>
+      <p>Check the academic calendar to see all key dates for the semester.</p>
+      <a href="https://www.esen.edu.sv/wp-content/uploads/documentos/calendario_academico_primer_anio.pdf" target="_blank" class="btn-link">🔗 View Calendar for 2025</a>
     </div>
+
+
+    <div class="card">
+        <h2>🕒 Class Schedules & Room Locations</h2>
+        <p>
+            Want to know what's happening on campus right now? ESEN's classroom overview lets you see the real-time schedule of classes, including where each one takes place — classrooms, auditoriums, and tech labs included.
+        </p>
+        <br>
+        <p>
+            It's a super useful tool to plan your day, check available rooms for group study, or make sure you're heading to the right place!
+        </p>
+        <a 
+            href="https://aulas.esen.edu.sv/day.php?day=17&month=07&year=2025&area=12&room=40" 
+            target="_blank" 
+            class="btn-link"
+        >
+            🔗 View Live Class Schedule
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>💻 How to Use the Virtual Platforms</h2>
+        <p>ESEN uses two main online platforms that you'll be using a lot. Here's a quick breakdown so you don’t get lost:</p>
+        
+        <h3>Moodle (📚)</h3>
+        <p>
+            This is where your classes live online. Teachers upload slides, videos, homework, and quizzes here. You can submit assignments and check feedback as well.
+        </p>
+        <a 
+            href="https://moodle.esen.edu.sv/login/index.php" 
+            target="_blank" 
+            class="btn-link"
+        >
+            🔗 Access Moodle
+        </a>
+
+        <h3>Academic Records System (🧾)</h3>
+        <p>
+            This is more administrative. You’ll see your grades, your academic transcript (CUM), and make official requests here. From second year on, you'll also enroll in your classes using this platform.
+        </p>
+        <p>
+            You’ll also use it to evaluate your professors and apply for assistant positions in certain courses.
+        </p>
+        <a 
+            href="https://registroacademico.esen.edu.sv" 
+            target="_blank" 
+            class="btn-link"
+        >
+            🔗 Access Academic Records
+        </a>
+
+        <p style="margin-top: 15px;">
+            To access both, you’ll need login credentials that the university provides. If you haven't received them yet, ask your coordinator or the help desk.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📚 Study Rooms at the Knowledge Center</h2>
+        <p>
+            Planning a study session with friends? ESEN's <strong>Knowledge Center</strong> offers reservable rooms you can check online. You’ll see what rooms are already booked and for how long.
+        </p>
+
+        <ul>
+            <li>👥 <strong>Small rooms require at least 3 people</strong> to use them.</li>
+            <li>👨‍👩‍👧‍👦 Got a big group (8+)? Ask for the large study room.</li>
+            <li>🧽 Each room has a whiteboard — get markers and erasers at the front desk.</li>
+            <li>🚫 <strong>No food allowed</strong> in the rooms.</li>
+            <li>🔇 Please keep your voice down — other groups are working too!</li>
+        </ul>
+
+        <p>
+            Booking a room means more focus and fewer distractions. Plan ahead and secure your spot!
+        </p>
+        <a 
+            href="https://centroconocimiento.esen.edu.sv" 
+            target="_blank" 
+            class="btn-link"
+        >
+            🔗 Check Study Room Availability
+        </a>
+    </div>
+
+
   </main>
-  
+
+
   <div id="footer-placeholder"></div>
-  <script src="../js/script.js"></script>
+
+  <script src="../js/script.js" data-base="../"></script>
 </body>
 </html>
