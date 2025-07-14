@@ -11,6 +11,24 @@ body {
   background-color: #fff;
   color: #333;
   font-family: 'Poppins', sans-serif;
+
+  opacity: 0;
+  transition: opacity 0.8s ease-in;
+}
+/*Esto es lo que crea el efecto suave al cargar la página, para darle dinamismo*/
+body.loaded {
+  opacity: 1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container {
@@ -309,6 +327,106 @@ section {
 
 .inline-link:hover {
   color: #20a5d8;
+}
+
+/*Secret Services*/
+#secret-services-menu ul li a {
+  color: #156fc4;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#secret-services-menu ul li a::before {
+  content: "🔗";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#secret-services-menu ul li a:hover {
+  color: #0a4a91;
+  transform: translateX(3px);
+}
+
+#secret-services-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#secret-services-menu li {
+  margin-bottom: 10px;
+}
+
+/*Survival Tips*/
+#survival-menu ul li a {
+  color: #156fc4;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#survival-menu ul li a::before {
+  content: "🔗";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#survival-menu ul li a:hover {
+  color: #0a4a91;
+  transform: translateX(3px);
+}
+
+#survival-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#survival-menu li {
+  margin-bottom: 10px;
+}
+
+/*Header bonito*/
+.page-intro {
+  background-color: #eef6fc;
+  padding: 50px 25px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.page-intro .intro-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.page-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: "Bowlby One SC", sans-serif;
+  color: #143987;
+}
+
+.page-intro p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 

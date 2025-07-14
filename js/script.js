@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    document.body.classList.add("loaded");
+  }, 100);
+
   // Detectar ruta base desde el atributo data-base
   const scriptTag = document.currentScript || document.querySelector('script[src*="script.js"]');
   const basePath = scriptTag.dataset.base || "";
@@ -82,4 +86,26 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(slideIndex);
     setInterval(nextSlide, 5000);
   }
+
+  //Scroll Reveal Effect
+  // Añadir clase reveal automáticamente
+  const revealTargets = document.querySelectorAll(".card, .page-intro");
+  revealTargets.forEach(el => el.classList.add("reveal"));
 });
+
+// Scroll Reveal Effect
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      element.classList.add("visible");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
