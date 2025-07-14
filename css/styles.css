@@ -399,6 +399,35 @@ section {
   margin-bottom: 10px;
 }
 
+/*Links*/
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 10px 14px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1565c0;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #bbdefb;
+  color: #0d47a1;
+  transform: translateY(-2px);
+}
+
+
 /*Header bonito*/
 .page-intro {
   background-color: #eef6fc;
