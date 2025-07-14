@@ -301,6 +301,17 @@ section {
   margin-bottom: 10px;
 }
 
+.inline-link {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.inline-link:hover {
+  color: #20a5d8;
+}
+
+
 /* FOOTER */
 footer {
   text-align: center;
