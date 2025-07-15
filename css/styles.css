@@ -601,3 +601,39 @@ footer {
   display: inline-block;
   text-align: center;
 }
+
+
+  /* CARDS DE HISTORIAS */
+
+div.story {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  width: 100%;
+  margin: 30px auto;
+  background-color: rgb(246, 246, 255);
+  color: #313131;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+div.story b {
+  font-size: 1.5rem;
+}
+
+div.story aside {
+  padding: 20px;
+}
+
+div.story img.izquierda {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+}
+
+.reset {
+  clear: both;
+}
