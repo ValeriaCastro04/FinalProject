@@ -514,4 +514,11 @@ footer {
   .nav-links li a {
     padding: 6px 8px;
   }
+
+  @media (min-width: 357px) and (max-width: 401px) {
+    .title-pag h1 {
+      font-size: 0.6 rem;
+      text-align: center;
+    }
+  }
 }
