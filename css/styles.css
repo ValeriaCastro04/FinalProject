@@ -523,6 +523,21 @@ footer {
   }
 }
 
+@media screen and (min-width: 358px) and (max-width: 405px) {
+  header h1,
+  .site-title {
+    font-size: 1.6rem; 
+    line-height: 1.2;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  header {
+    padding: 10px 16px;
+  }
+}
+
+
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
